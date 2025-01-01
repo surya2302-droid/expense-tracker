@@ -1,0 +1,139 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input, select, button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+.transaction-table th {
+  background-color: #333;
+}
+
+.delete-button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c9302c;
+}
+
+/* Align "from-date" and "to-date" side by side */
+input[type="date"] {
+  width: calc(50% - 10px);
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Adjust Add Expense button */
+button {
+  width: 100%;
+}
+
+/* Ensure Add Expense button is below description */
+input[type="text"] + button {
+  margin-top: 10px;
+}
+
+/* Align Amount and Debit/Credit dropdown side by side */
+.amount-select-container {
+  display: flex;
+  gap: 10px;
+}
+
+.amount-select-container input,
+.amount-select-container select {
+  width: calc(50% - 5px);
+  display: inline-block;
+}
+.full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.date-input-container {
+  display: flex;
+  gap: 10px; /* Adjust the gap between the inputs as needed */
+}
+
+.date-input {
+  flex: 1;
+}
+.balance-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.balance-amount {
+  font-size: 2em; /* Adjust the size as needed */
+  font-weight: bold;
+}
+.summary-container {
+  display: flex;
+  justify-content: space-between;
+}
+.export-button {
+  margin-left: auto;
+  display: block;
+  margin-top: 10px;
+}
